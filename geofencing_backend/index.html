@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geofencing App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 600px;"></div>
+    <script>
+        var map = L.map('map').setView([28.589030, 77.216790], 15);
+
+        // Using a white tile layer
+        L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+            maxZoom: 20
+        }).addTo(map);
+
+        // Adding and styling the polygon
+        var polygon = L.polygon([
+            [28.585355,77.211799],
+            [28.585379,77.211498],
+            [28.585125,77.211471],
+            [28.585101,77.211788]
+        ], {
+            color: 'red',        // Border color
+            fillColor: 'red',    // Fill color
+            fillOpacity: 0.5     // Fill opacity
+        }).addTo(map);
+
+        // Watch position
+        navigator.geolocation.watchPosition(function(position) {
+            var userLat = position.coords.latitude;
+            var userLon = position.coords.longitude;
+
+            $.post('/check_geofence', JSON.stringify({latitude: userLat, longitude: userLon}), function(data) {
+                if (data.length > 0) {
+                    alert('You are within a geofence: ' + data[0].name);
+                }
+            }, 'json');
+        });
+    </script>
+</body>
+</html>
