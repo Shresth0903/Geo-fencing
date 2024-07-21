@@ -287,4 +287,3 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/flask,python,windows
 **/*.xlsx
-static/downloads/*.xlsx

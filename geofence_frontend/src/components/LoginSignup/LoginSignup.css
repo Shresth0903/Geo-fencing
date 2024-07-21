@@ -1,0 +1,118 @@
+.container {
+    width: 300px; /* Adjust this value to make the container smaller */
+    padding: 20px; /* Add padding for inner spacing */
+    margin: 0 auto; /* Center the container */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; 
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd; /* Border to separate tabs from the form */
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for tabs */
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.tab.active {
+    border-bottom: 2px solid #007bff; /* Active tab indicator */
+}
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.input img {
+    width: 20px; /* Adjust the size of the icons */
+    height: 20px;
+    margin-right: 10px;
+}
+
+.input input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+.submit-button {
+    width: 60%; /* Make the button fill the container's width */
+    padding: 10px 0;
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    margin-left: 8px;
+    font-size: 14px;
+    color: #333; /* Adjust color as needed */
+    cursor: pointer;
+}
+
+.checkbox-input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.checkbox-input:checked {
+    background-color: rgb(19, 221, 66); 
+}
+
+.checkbox-input:checked::after {
+    content: '\2714'; 
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

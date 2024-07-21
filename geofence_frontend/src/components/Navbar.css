@@ -1,0 +1,59 @@
+.navbar {
+    background-color: #007bff; /* Change this to your desired shade of blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: space-between; /* Align items to the right */
+}
+
+.navbar-brand img {
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.form-switch .form-check-input {
+    cursor: pointer;
+}
+
+.form-switch .form-check-label {
+    cursor: pointer;
+}
+
+.navbar-text {
+    display: flex;
+    align-items: right;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.navbar-text .fa-user {
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.navbar-text .fa-user:hover {
+    transform: scale(1.2);
+}
+
+

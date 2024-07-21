@@ -1,0 +1,96 @@
+.footer {
+    background-color: #007bff; 
+    padding: 10px 15px;
+    text-align: center;
+    color: white; /* Set text color to white */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Center align text */
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.footer-section p {
+    color: white; /* Set paragraph text color to white */
+}
+
+.footer-section h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: white; /* Set heading text color to white */
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Align list items to the left */
+}
+
+.footer-section ul li {
+    margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section p {
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: white; /* Set paragraph text color to white */
+}
+
+.footer-section a {
+    color: white; /* Ensure links within paragraphs are white */
+    text-decoration: underline; /* Add underline to make the link visible */
+}
+
+.footer-section a:hover {
+    color: #ffdd57; /* Change color on hover to stand out */
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    color: white; /* Set bottom text color to white */
+}
+
+form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+}

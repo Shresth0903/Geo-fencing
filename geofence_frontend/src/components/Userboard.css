@@ -1,0 +1,31 @@
+.user-dashboard-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.time-log-section {
+    margin-bottom: 20px;
+}
+
+.time-log-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.time-log-table th,
+.time-log-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.line-charts-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line-chart {
+    width: 48%;
+}
